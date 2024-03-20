@@ -12,6 +12,7 @@
 # Introduction
 
 # Analysis of 10 Mutants of the Range class 
+
 1. **combine** Method
 **Original Code:** `if(range1 == null)`
 **Mutated Code:** `if(false)`
