@@ -14,6 +14,7 @@
 # Analysis of 10 Mutants of the Range class 
 
 1. **combine** Method
+2. 
 **Original Code:** `if(range1 == null)`
 **Mutated Code:** `if(false)`
 **Analysis:** This mutant was killed by the test `range1IsNullTest`, the expected range returned should have been the same as the second input range `range2`, but instead an unexpected value was received since the mutant code was using an unexpected value the max and min values.
