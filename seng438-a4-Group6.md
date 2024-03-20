@@ -18,11 +18,11 @@
    **Mutated Code:** `if(false)`
    **Analysis:** This mutant was killed by the test `range1IsNullTest`, the expected range returned should have been the same as the second input range `range2`, but instead an unexpected value was received since the mutant code was using an unexpected value the max and min values.
 
-2.  **combine** Method
+2.**combine** Method
     **Original Code:** `return range1`
     **Mutated Code:** `return null`
     **Analysis:** This mutant was killed by the test `range2IsNullTest`, as the expected range to be returned should have been the same as the first input range `range1` since the second one from the test is null. The return value of the mutated code was null which was unexpected and thus led to the mutant being killed.
-    
+
 3. **constrain** Method
    **Original Code:** `if (value > this.upper)`
    **Mutated Code:** `If (value >= this.upper)`
@@ -62,7 +62,7 @@
     **Original Code:** `if (!(obj instanceof Range)) `
     **Mutated Code:** `if (true)`
     **Analysis:** This mutant was killed. The test `rangeObjectsAreEqual()` was able to detect and kill this mutation since an argument of type Range.class was sent to the equals method. This test should return true, but with this mutant code it will always return false which is the unexpected behavior that was detected and killed.
-    
+
 # Report all the statistics and the mutation score for each test class
 
 # Analysis drawn on the effectiveness of each of the test classes
