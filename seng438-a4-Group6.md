@@ -18,7 +18,7 @@
    **Mutated Code:** `if(false)`
    **Analysis:** This mutant was killed by the test `range1IsNullTest`, the expected range returned should have been the same as the second input range `range2`, but instead an unexpected value was received since the mutant code was using an unexpected value the max and min values.
 
-2.**combine** Method
+2.  **combine** Method
     **Original Code:** `return range1`
     **Mutated Code:** `return null`
     **Analysis:** This mutant was killed by the test `range2IsNullTest`, as the expected range to be returned should have been the same as the first input range `range1` since the second one from the test is null. The return value of the mutated code was null which was unexpected and thus led to the mutant being killed.
